@@ -1,0 +1,32 @@
+<html lang="pt-br">
+    <head>
+        <title> Formulário com PHP </title>
+        <link href="css/bootstrap.css" rel="stylesheet"/>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <center>
+        <h1> Formulário </h1> <br>
+        <form action="recebe.php" method="GET">
+            Nome: <input type="text" name="nome"> <br><br>
+            Sexo: &nbsp 
+            <input type="radio" name="sexo" value="mas"> Masculino &nbsp 
+            <input type="radio" name="sexo" value="fem"> Feminino <br><br>
+            Linguagem de Programação preferida: &nbsp 
+            <input type="checkbox" name="linguagem[]" value="php"> PHP &nbsp
+            <input type="checkbox" name="linguagem[]" value="java"> JAVA <br><br>
+            Estado:
+            <select name="estado">
+                <option value="ac"> Acre </option>
+                <option value="df"> Distrito Federal </option>
+                <option value="go"> Goiás </option>
+            </select>
+            <br><br>
+            Imagem de perfil: 
+            <input type="file" name="imagem"><br>
+            <br><br>
+            <input type="submit" value="Enviar" class="btn btn-primary">
+        </form>
+        </center>
+    </body>
+</html>
